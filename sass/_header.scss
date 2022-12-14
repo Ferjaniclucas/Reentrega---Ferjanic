@@ -1,0 +1,63 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+p.logo{
+    @include flex(center)
+    padding: 1em;
+    font-weight: bold;
+    color: $rojo;
+    font-size: 2.1em;
+    font-family:'Roboto', sans-serif;
+    margin-right: 1em;
+}
+
+#navbar div img{
+    padding: 1em;
+    text-align: center;
+    margin-right: 1em;
+    border-radius: 5em;
+    height: 15vh;
+   
+}
+
+#navbar div{
+    @include flex(center)
+    flex-direction: row;
+    justify-content: space-around;
+    #navbar div a{
+        padding: 1em;
+        @include flex(center)
+        flex-direction: row;
+        text-decoration: none;
+        #navbar ul {
+            background-color: $bordo;
+            @include flex(center)
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding: 1em;
+            margin:0em;
+            position:fixed
+            #navbar ul a{
+                display: block;
+                padding: 4px 8px;
+                text-decoration: none;
+                color: $blancogris;
+                transition: color .3s ease, background-color .3s;
+                #navbar ul a:hover,
+                #navbar ul a:focus {
+                color: $blancogris;
+                background-color: $rojooscuro;}
+                #navbar li { 
+                    list-style: none;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+header a:hover{ 
+    background-color: $bordo;
+}

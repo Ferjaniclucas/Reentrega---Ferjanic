@@ -1,0 +1,164 @@
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    color: $blancogris;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),url(../imagenes/frente.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    #hero h1{ 
+        color: $blancogris;
+        #hero button{
+            font-size: 1em;
+        }
+    }
+}
+
+button{
+
+    font-size: 1.5em ;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 2px solid rgba(0, 0, 0, 5);
+    box-shadow: 2px 2px 10px;
+    color: white;
+    background-color: $rojo;
+    margin: 2rem;
+    transition: .3s ease;
+    min-width: 200px;
+}
+
+button:hover { 
+    background-color: $bordo;
+    
+}
+
+
+#id.contactos{
+    background-color: $rojo;
+    margin-top: 8rem;
+}
+
+#contactos button{
+    @extend button;
+    font-size: 0.8em;
+}
+
+#somos-alurod{
+    text-align: center;
+
+}
+
+#nuestra-consulta{
+    text-align: center;
+    padding: 0 auto;
+}
+
+.galeria button{
+    @extend button;
+    display: flex;
+    position: relative;
+    .galeria button:before {
+        content: ".";
+        background-color: rgba(0, 0, 0,2);
+        width: 10%;
+        height: 10%;
+        position:relative;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        transition: opacity ease .3s;
+        opacity: 0;
+        .galeria button:hover:before {
+            opacity: 0.5;
+        }
+    }
+    
+   
+}
+
+.galeria img{
+    display: block;
+    max-height: 400px;
+    transition: transform ease .3s;
+}
+
+form { 
+    font-size: 0.8em;
+    text-align: center;
+    form label { 
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        form button{
+            font-size: 0.8em;
+        }
+    }
+}
+
+#social-media img{
+   border-radius: 1em;
+   background-color: rgb(255, 255, 255);
+   transition: all ease .3s;
+   margin: 1.2em;
+   height: 2em;
+}
+
+#instagram:hover{
+    background-color: rgb(255, 0, 132);
+    background-position: center;
+    text-align: center;
+}
+
+#facebook:hover{
+    background-color: rgb(21, 21, 247);
+}
+
+footer { 
+    background-color: black;
+    
+    color: white;
+    padding: 1em;
+}
+
+hr { 
+    height:0.2rem;
+    max-width: 100%;
+    border: 0;
+    background: linear-gradient(to right,rgba(0, 0, 0, 0),$rojo, rgba(0, 0, 0,0));
+    section hr{
+        margin: 3rem;
+    }
+}
+
+
+.flex-galeria{ 
+    display: flex;
+    flex-direction:column-reverse;
+    flex-wrap:wrap
+}
+
+.flex-galeria img{
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10%;
+    width: 300px; 
+    opacity: 1;
+    transition: all ease 0.2s;
+    .flex-galeria img:hover{
+        opacity: 10;
+        border: solid 2px $rojo;
+    }
+}
+
+
+

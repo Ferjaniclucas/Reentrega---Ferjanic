@@ -1,0 +1,256 @@
+html{ 
+    scroll-behavior: smooth
+}
+
+body{
+    font-family:'Roboto', sans-serif; 
+    margin: 0;  
+    text-align: center;
+    background-color: $blancogris;
+    }
+
+h1{ font-size: 1.7em;}
+h2{ font-size: 1.5em;
+    padding-top: 5em;
+    margin:0em;
+}
+h3{ font-size: 1.5em;
+    text-align: center;
+    padding-top: 6.5em;
+    margin: 0;
+}
+h4{
+    font-size: 1em;
+}
+p{ font-size: 1.2em;
+   padding:1em auto;
+   margin: 0;}
+button{ 
+     font-size: 2em ;
+     font-weight: bold;
+     border-radius: 20px;  
+     color: white;
+     background-color: $rojo;
+     margin: 1.5rem;
+     transition:.3s ease;
+ }
+
+ button:hover { 
+     background-color: $bordo;
+ } 
+
+ .color-acento{ color: $rojo;
+ }
+ 
+ p.logo{
+     display: flex;
+     padding: 1em;
+     text-align: center;
+     font-weight: bold;
+     color: $rojo;
+     font-size: 2.1em;
+     font-family:'Roboto', sans-serif;
+     margin-right: 1em;
+ }
+ #navbar div{
+     display: flex;
+     justify-content: space-between;
+ }
+
+ #navbar div a{
+     padding: 0.2em;
+     display: flex;
+     text-align: center;
+     text-decoration: none;
+
+ }
+
+ #navbar ul {
+     background-color: $bordo;
+ 
+     position: absolute;
+     text-align: center;
+     padding: 0em;
+     margin: 5.4em;
+     transition: max-height .3s ease;
+     position: absolute;
+     overflow: hidden;
+     width: 100%;
+ }
+
+ #navbar li { 
+    
+    list-style: none;
+    padding: 0;
+ }
+ 
+ #navbar ul a{
+     display: block;
+     padding: 4px 8px;
+     text-decoration: none;
+     color: $blancogris;
+     transition: color .3s ease, background-color .3s;
+ }
+
+ #navbar ul a:hover,
+ #navbar ul a:focus {
+     color: white;
+     background-color: $rojooscuro;
+ }
+ 
+ header a:hover{ 
+  background-color: $rojooscuro;
+ }
+
+ #hero {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+     flex-direction: column;
+     height: 70vh;
+     color: $blancogris;
+     background-image: linear-gradient(
+         0deg,
+         rgba(0,0,0,0.5),
+         rgba(0,0,0,0.5)
+     ),url(../imagenes/frente.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+ }
+ 
+ #hero h1{ 
+     color: $blancogris;
+ }
+ 
+ #hero button{
+     font-size: 1em;
+ }
+ #contactos button{
+     font-size: 0.8em;
+ }
+ 
+ #somos-alurod{
+     text-align: center;
+ 
+ }
+ 
+ #nuestra-consulta{
+     text-align: center;
+     padding: 0 auto;
+ }
+
+ .galeria button{
+     display: block;
+     position: relative;
+     margin: 2rem auto;
+     max-width: 800px;
+     overflow: hidden;
+     box-shadow: 0 0 10px var($rojo);
+     padding: 0;
+     border: none;
+    
+ }
+ 
+ .galeria img{
+     display: block;
+     max-height: 400px;
+     transition: transform ease .3s;
+ }
+ 
+ 
+ .galeria button:before {
+     content: "";
+     background-color: rgba(0, 0, 0,2);
+     width: 10%;
+     height: 10%;
+     position: relative;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     transition: opacity ease .3s;
+     opacity: 0;
+ }
+ 
+ .galeria button:hover:before {
+     opacity: 0.5;
+ }
+
+ form { 
+     font-size: 0.8em;
+     text-align: center;
+ }
+ 
+ form label { 
+     display: block;
+     width: 50%;
+     margin: 0 auto;
+ }
+
+ form button{
+     font-size: 0.8em;
+ }
+ 
+ 
+ #social-media img{
+    border-radius: 1em;
+    background-color: rgb(255, 255, 255);
+    transition: all ease .3s;
+    margin: 1.2em;
+    height: 2em;
+ }
+ 
+ #instagram:hover{
+     background-color: rgb(255, 0, 132);
+     background-position: center;
+     text-align: center;
+ }
+ 
+ #facebook:hover{
+     background-color: rgb(21, 21, 247);
+ }
+ 
+ footer { 
+     background-color: black;
+     
+     color: white;
+     padding: 1em;
+ }
+ 
+ hr { 
+     height:0.2rem;
+     max-width: 100%;
+     border: 0;
+     background: linear-gradient(to right,rgba(0, 0, 0, 0),$rojo, rgba(0, 0, 0,0));
+ }
+ section hr{
+     margin: 3rem;
+ }
+ #id.contactos{
+     background-color: $rojo;
+     margin-top: 8rem;
+ }
+ .flex-galeria{ 
+     display: flex;
+     flex-direction:column-reverse;
+     flex-wrap:wrap
+    
+ }
+ .flex-galeria img{
+     margin: 0 auto;
+     padding: 10px;
+     border-radius: 10%;
+     width: 300px; 
+     opacity: 1;
+     transition: all ease 0.2s;
+
+    }
+ 
+ .flex-galeria img:hover{
+     opacity: 10;
+     border: solid 2px $rojo;
+
+    }
+
+    
